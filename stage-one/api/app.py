@@ -7,8 +7,8 @@ app = Flask(__name__)
 def get_endpoint():
     slack_name = request.args.get('slack_name', 'Rudy Sulley')
     track = request.args.get('track', 'backend')
-    github_file_url = request.args.get('github_file_url', '')
-    github_repo_url = request.args.get('github_repo_url', '')
+    github_file_url = request.args.get('github_file_url', 'https://github.com/ayitinya/zuri/blob/main/stage-one/api/app.py')
+    github_repo_url = request.args.get('github_repo_url', 'https://github.com/ayitinya/zuri')
 
     # Get the current day of the week
     current_day = datetime.utcnow().strftime('%A')
