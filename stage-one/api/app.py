@@ -3,7 +3,7 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-@app.route('/endpoint', methods=['GET'])
+@app.route('/api', methods=['GET'])
 def get_endpoint():
     slack_name = request.args.get('slack_name', 'Rudy Sulley')
     track = request.args.get('track', 'backend')
